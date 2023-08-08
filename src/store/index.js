@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { addTask, removeTask, tasksReducer } from './slices/tasksSlice';
+import { addTask, editTask, removeTask, tasksReducer } from './slices/tasksSlice';
 
 const store = configureStore({
     reducer : {
@@ -7,4 +7,4 @@ const store = configureStore({
     }
 });
 
-export { store, addTask, removeTask };
+export { store, addTask, removeTask, editTask };

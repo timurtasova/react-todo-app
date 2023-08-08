@@ -1,12 +1,11 @@
 import { useSelector } from 'react-redux';
-import Form from './Form';
 import ListItem from './ListItem';
 
 function List() {
     const tasks = useSelector((state) => {
         return state.tasks.data;
     });
-
+    
     const renderedTasks = tasks.map(task => {
         return <ListItem key={task.id} task={task} />;
     });
